@@ -6,7 +6,7 @@
 
 ## Example
 
-![Alt text](https://media2.giphy.com/media/JOGOY55D7iAAvMNrNT/giphy.gif)
+![Alt text](2020-08-23_16-09-35.gif) / ![](2020-08-23_16-09-35.gif)
 
 ## Install
 
