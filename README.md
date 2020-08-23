@@ -6,7 +6,7 @@
 
 ## Example
 
-![Example](https://giphy.com/gifs/JOGOY55D7iAAvMNrNT)
+![Example](https://giphy.com/gifs/JOGOY55D7iAAvMNrNT/fullscreen)
 
 ## Install
 
