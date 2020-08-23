@@ -6,6 +6,8 @@
 
 ## Example
 
+![Alt text](https://media2.giphy.com/media/JOGOY55D7iAAvMNrNT/giphy.gif)
+
 ## Install
 
 ```bash
