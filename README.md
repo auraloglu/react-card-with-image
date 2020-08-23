@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/react-card-with-image.svg)](https://www.npmjs.com/package/react-card-with-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## Example
+
+![Alt text](https://media2.giphy.com/media/JOGOY55D7iAAvMNrNT/giphy.gif)
+
 ## Install
 
 ```bash
