@@ -62,7 +62,6 @@
   left: -23px;
   width: 28px;
   border-radius: 5px;
-  background-color: #2590ef;
   height: 100%;
 }
 
@@ -73,12 +72,7 @@
   left: -23px;
   width: 28px;
   border-radius: 5px;
-  background-color: #2590ef;
   height: 100%;
-}
-
-.attrImage {
-  height: 450px;
 }
 
 .activeAttr .arrowDown {

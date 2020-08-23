@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './styles.module.css'
 
-export const CardView = ({ items }) => {
+export const CardView = ({ items, activeColor, imageHeight, imageWidth }) => {
   const navigations = items
 
   const [itemLink, setItemLink] = useState(navigations[0].image)
@@ -25,6 +25,9 @@ export const CardView = ({ items }) => {
             onClick={() => handleClick(item)}
           >
             <div
+              style={{
+                backgroundColor: activeColor || '#2590ef'
+              }}
               className={
                 selectedItem.id === item.id
                   ? styles.activeSelectorActive
@@ -51,7 +54,15 @@ export const CardView = ({ items }) => {
   return (
     <div className={styles.attrSection}>
       <div className={styles.attrImageSection}>
-        <img src={itemLink} className={styles.attrImage} alt='logo' />
+        <img
+          src={itemLink}
+          className={styles.attrImage}
+          style={{
+            height: imageHeight || '',
+            width: imageWidth || ''
+          }}
+          alt='logo'
+        />
       </div>
       <div className={styles.attrListSection}>
         <div className={styles.attributeList}>
