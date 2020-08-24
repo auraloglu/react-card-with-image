@@ -33,8 +33,8 @@ export const CardView = ({ items, activeColor, imageHeight, imageWidth }) => {
                   ? styles.activeSelectorActive
                   : styles.activeSelector
               }
-            ></div>
-            <i className={styles.arrowDown}></i>
+            />
+            <i className={styles.arrowDown} />
             <p className={styles.itemHeader}>{item.header}</p>
             <p
               className={
