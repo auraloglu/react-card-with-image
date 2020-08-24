@@ -3,6 +3,7 @@
 > Cool react card component with image!
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/4445ab73813d4bfaaadf429a5d283c1d)](https://app.codacy.com/manual/cappydh/react-card-with-image?utm_source=github.com&utm_medium=referral&utm_content=cappydh/react-card-with-image&utm_campaign=Badge_Grade_Dashboard)
+[![Build Status](https://travis-ci.org/cappydh/react-card-with-image.svg?branch=master)](https://travis-ci.org/cappydh/react-card-with-image)
 [![NPM](https://img.shields.io/npm/v/react-card-with-image.svg)](https://www.npmjs.com/package/react-card-with-image) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Example
