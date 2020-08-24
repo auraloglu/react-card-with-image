@@ -1,23 +1,20 @@
 import { CardView } from '.'
 import React from 'react'
 import Adapter from 'enzyme-adapter-react-16'
-import { shallow, configure  } from 'enzyme'
+import { shallow, configure } from 'enzyme'
 
 const items = [
   {
     id: 1,
     header: 'Lorem ipsum',
-    description:
-      'dolor sit amet',
-    image:
-      'https://images.unsplash.com/photo-1574144611937-0df059b5ef3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80'
+    description: 'dolor sit amet',
+    image: 'image-url-1'
   },
   {
     id: 2,
     header: 'Sed cursus',
-    description:
-      'in metus quis tempor',
-    image: 'https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    description: 'in metus quis tempor',
+    image: 'image-url-2'
   }
 ]
 
@@ -40,8 +37,30 @@ describe('CardView', () => {
   it('render only first description', () => {
     const wrapper = shallow(<CardView items={items} />)
     const descriptionFirst = items[0].description
-    expect(wrapper.find('.itemDescription')).toHaveLength(1)
-    expect(wrapper.find('.activeItemDescription').text()).toEqual(descriptionFirst)
+    const itemDescription = wrapper.find('.itemDescription')
+    const activeItemDescription = wrapper.find('.activeItemDescription').text()
+    expect(itemDescription).toHaveLength(1)
+    expect(activeItemDescription).toEqual(descriptionFirst)
+  })
+  it('renders correct hexCode color for activeColor', () => {
+    const wrapper = shallow(<CardView items={items} activeColor='#000' />)
+    const acitveSelector = wrapper.find('.activeSelectorActive').get(0)
+    const activeColor = acitveSelector.props.style.backgroundColor
+    expect(activeColor).toBe('#000')
+  })
+  it('renders correct rgb color for activeColor', () => {
+    const wrapper = shallow(
+      <CardView items={items} activeColor='rgb(128, 181, 232)' />
+    )
+    const acitveSelector = wrapper.find('.activeSelectorActive').get(0)
+    const activeColor = acitveSelector.props.style.backgroundColor
+    expect(activeColor).toBe('rgb(128, 181, 232)')
+  })
+  it('renders correct css color for activeColor', () => {
+    const wrapper = shallow(<CardView items={items} activeColor='red' />)
+    const acitveSelector = wrapper.find('.activeSelectorActive').get(0)
+    const activeColor = acitveSelector.props.style.backgroundColor
+    expect(activeColor).toBe('red')
   })
   it('changes img src on click', () => {
     const wrapper = shallow(<CardView items={items} />)

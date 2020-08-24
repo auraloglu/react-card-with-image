@@ -47,9 +47,9 @@ const App = () => {
   return (
     <CardView
       items={items}
-      activeColor={'#000'}
-      imageHeight={'600px'}
-      imageWidth={''}
+      activeColor='#000'
+      imageHeight='600px'
+      imageWidth=''
     />
   )
 }
