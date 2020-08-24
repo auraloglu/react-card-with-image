@@ -64,12 +64,14 @@ const App = () => {
   return (
     <CardView
       items={items}
-      activeColor={'#000'}
-      imageHeight={'650px'}
-      imageWidth={'800px'}
+      activeColor='#000'
+      imageHeight='650px'
+      imageWidth='800px'
     />
   )
 }
+
+export default App
 ```
 
 ## License
