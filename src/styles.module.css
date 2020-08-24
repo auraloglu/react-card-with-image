@@ -47,6 +47,10 @@
   overflow: hidden;
 }
 
+.itemHeader {
+  font-weight: bold;
+}
+
 .itemDescription {
   display: none;
 }
@@ -83,7 +87,7 @@
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   position: absolute;
-  top: 25px;
+  top: 32px;
   left: 0;
 }
 
