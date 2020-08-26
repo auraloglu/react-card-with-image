@@ -15,7 +15,7 @@
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
-    "test": "./node_modules/.bin/jest --coverage",
+    "test": "jest --coverage",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
