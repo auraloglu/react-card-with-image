@@ -49,18 +49,16 @@
     "prettier": "^2.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
-  },
-  "files": [
-    "dist",
-    "src"
-  ],
-  "dependencies": {
+    "react-scripts": "^3.4.1",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "babel-jest": "24.9.0",
     "react-test-renderer": "^16.13.1"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
