@@ -57,11 +57,7 @@
     "dist",
     "src"
   ],
-  "collectCoverageFrom": [
-    "**/*.{js,jsx}",
-    "!**/node_modules/**",
-    "!**/vendor/**"
-  ],
+  "collectCoverageFrom": [ "packages/**/src/*.js" ],
   "dependencies": {
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
