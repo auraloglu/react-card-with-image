@@ -14,4 +14,4 @@ install:
 script:
 - npm test
 after_success:
-  - ./node_modules/.bin/jest --coverage && ./node_modules/.bin/coveralls < coverage/lcov.info
+- ./node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
