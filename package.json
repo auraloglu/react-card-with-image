@@ -21,7 +21,8 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -57,7 +58,9 @@
     "dist",
     "src"
   ],
-  "collectCoverageFrom": [ "packages/**/src/*.js" ],
+  "collectCoverageFrom": [
+    "packages/**/src/*.js"
+  ],
   "dependencies": {
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
