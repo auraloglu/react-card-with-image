@@ -22,7 +22,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "coveralls": "./node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -58,9 +58,6 @@
     "dist",
     "src"
   ],
-  "collectCoverageFrom": [
-    "packages/**/src/*.js"
-  ],
   "dependencies": {
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
@@ -71,6 +68,11 @@
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "identity-obj-proxy"
-    }
+    },
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!data/keyMap.js",
+      "!/node_modules/"
+  ]
   }
 }
