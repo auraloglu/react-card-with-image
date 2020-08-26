@@ -13,5 +13,5 @@ install:
 - npm install
 script:
 - npm test
-after_script:
+after_success:
 - npm run coveralls

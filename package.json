@@ -22,7 +22,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -73,6 +73,6 @@
       "**/*.js",
       "!data/keyMap.js",
       "!/node_modules/"
-  ]
+    ]
   }
 }
