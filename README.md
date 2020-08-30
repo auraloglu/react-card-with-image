@@ -6,7 +6,7 @@
 [![Build Status](https://travis-ci.org/cappydh/react-card-with-image.svg?branch=master)](https://travis-ci.org/cappydh/react-card-with-image)
 [![NPM](https://img.shields.io/npm/v/react-card-with-image.svg)](https://www.npmjs.com/package/react-card-with-image)
 [![Coverage Status](https://coveralls.io/repos/github/cappydh/react-card-with-image/badge.svg?branch=master)](https://coveralls.io/github/cappydh/react-card-with-image?branch=master)
-[![NPM Downloads](https://img.shields.io/npm/dm/react-card-with-image.svg)][(https://npmcharts.com/compare/react-card-with-image?minimal=true)]
+[![NPM Downloads](https://img.shields.io/npm/dm/react-card-with-image.svg)](https://npmcharts.com/compare/react-card-with-image?minimal=true)
 
 ## Example
 
